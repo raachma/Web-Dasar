@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>Bootstrap demo</title>
+</head>
+<body>
+    <!-- membuat navbar -->
+    <!-- container= semua ditengah -->
+    <!-- fixed-top= nav tdk hilang -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" style="background-color: var(--bs-body-bg);">
+        <div class="container">
+            <a href="#" class="navbar-brand">Mari Travel</a>
+            <!-- titik 3 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <!-- navigasi -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#promo">Promo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                            <button class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-sun theme-icon-active" data-theme-icon-active="bi-sun"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <button class="dropdown-item d-flex align-item-center" href="#" role="button" data-bs-theme-value="light">
+                                        <i class="bi bi-sun me-2 opacity-50" data-theme-icon="bi-sun"></i>
+                                        Light
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item d-flex align-item-center" href="#" role="button" data-bs-theme-value="dark">
+                                        <i class="bi bi-moon-fill me-2 opacity-50" data-theme-icon="bi-moon-fill"></i>
+                                        Dark
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item d-flex align-item-center" href="#" role="button" data-bs-theme-value="auto">
+                                        <i class="bi bi-circle-half me-2 opacity-50" data-theme-icon="bi-circle-half"></i>
+                                        Auto
+                                    </button>
+                                </li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <section class="text-center text-sm-start pt-5 pb-5 pb-sm-0 mt-5" style="background-color: var(--bs-secondary-bg);">
+        <div class="container">
+            <div class="d-flex align-item-center">
+                <div>
+                    <h1>Ingin jalan-jalan?<span class="text-primary"> Mari </span>Travel aja</h1>
+                    <p class="lead">Yuk jalan-jalan, melepas penat dan beban, mengisi hari yang indah bersama teman-teman dengan menggunakan Mari Travel</p>
+                    <button class="btn" style="background-color: var(--bs-primary-bg-subtle);">
+                        Berangkat Yuk !
+                    </button>
+                </div>
+                <!-- d-none d-sm-block membuat gambar menghilang saat jd android-->
+                <img class="img-fluid w-80 d-none d-sm-block" src="img/header.svg" alt="header">
+            </div>
+            </div>
+    </section>
+
+    <!-- services -->
+    <section class="pt-5 pb-5" id="services">
+        <div class="container">
+            <div class="row text-center g-4">
+                <!-- membuat card  -->
+                <div class="col">
+                <div class="p-5 card border-0" style="background-color: var(--bs-secondary-bg);">
+                    <img src="img/aircraft.svg" class="p-2 card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ticket</h5>
+                        <p class="card-text">Kami dapat bantu kamu dengan mendapatkan ticket perjalanan yang murah, nyaman dan terjangkau.</p>
+                        <a href="#" class="btn" style="background-color: var(--bs-primary-bg-subtle);">Pesan Ticket</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card border-0" style="background-color: var(--bs-primary-bg-subtle);">
+                    <img src="img/place.svg" class="p-2 card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Penginapan</h5>
+                        <p class="card-text">Dapatkan penginapan yang nyaman dengan akses wisata disekitaran mu.</p>
+                        <a href="#" class="btn" style="background-color: var(--bs-secondary-bg);">Book Hotel</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                <div class="card border-0" style="background-color: var(--bs-secondary-bg);">
+                    <img src="img/world.svg" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Wisata</h5>
+                        <p class="card-text">Kunjungi tempat wisata terbaik mu di lokasi liburan kamuinginkan dengan harga yang terjangkau.</p>
+                        <a href="#" class="btn" style="background-color: var(--bs-primary-bg-subtle);">Kunjungi</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- promo -->
+    <section class="p-5 mt-4" id="promo" style="background-color: var(--bs-primary-bg-subtle);">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3>Dapatkan promo menarik</h3>
+                <div class="input-group">
+                    <!-- form-control= kek search -->
+                    <input type="text" class="form-control" placeholder="Masukkan email anda">
+                    <button class="btn btn-lg" type="button" style="background-color: var(--bs-dark-bg-subtle);">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="p-5" id="contact">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md">
+                    <h2 class="text-center mb-4">Contact Us</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <i class="bi bi-geo-alt"></i>
+                            <span class="fw-bold">Location:</span><br>
+                            Jalan keselamatan, 12
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-phone"></i>
+                            <span class="fw-bold">Mobile Phone:</span><br>
+                            (+62) 856-5548-2569
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-instagram"></i>
+                            <span class="fw-bold">Instagram:</span><br>
+                            @maritravel
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-envelope"></i>
+                            <span class="fw-bold">E-Mail:</span><br>
+                            services@maritravel
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <img src="img/contact_us.svg" alt="contact" class="img-fluid d-none d-sm-block">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="p-3 text-center position-relative" style="background-color: var(--bs-dark-bg-subtle);">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2023 MariTravel.com</p>
+            <!-- tombol ke atas -->
+            <a href="#" class="position-absolute bottom-0 end-0 p-4">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!-- script dark -->
+    <script>
+        /*!
+ * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
+ * Copyright 2011-2023 The Bootstrap Authors
+ * Licensed under the Creative Commons Attribution 3.0 Unported License.
+ */
+
+(() => {
+    'use strict'
+    const getStoredTheme = () => localStorage.getItem('theme')
+    const setStoredTheme = theme => localStorage.setItem('theme', theme)
+
+    const getPreferredTheme = () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme) {
+        return storedTheme
+    }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    }
+
+    const setTheme = theme => {
+    if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-bs-theme', 'dark')
+    } else {
+        document.documentElement.setAttribute('data-bs-theme', theme)
+    }
+    }
+
+    setTheme(getPreferredTheme())
+
+    const showActiveTheme = (theme, focus = false) => {
+    const themeSwitcher = document.querySelector('#bd-theme')
+
+    if (!themeSwitcher) {
+        return
+    }
+
+    const themeSwitcherText = document.querySelector('#bd-theme-text')
+    const activeThemeIcon = document.querySelector('.theme-icon-active')
+    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+    const iconOfActiveBtn = btnToActive.querySelector('i').dataset.themeIcon
+
+    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+        element.classList.remove('active')
+        element.setAttribute('aria-pressed', 'false')
+    })
+
+    btnToActive.classList.add('active')
+    activeThemeIcon.classList.remove(activeThemeIcon.dataset.themeIconActive)
+    activeThemeIcon.classList.add(iconOfActiveBtn)
+    activeThemeIcon.dataset.iconActive = iconOfActiveBtn
+
+    if (focus) {
+        themeSwitcher.focus()
+    }
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    const storedTheme = getStoredTheme()
+    if (storedTheme !== 'light' && storedTheme !== 'dark') {
+        setTheme(getPreferredTheme())
+    }
+    })
+
+    window.addEventListener('DOMContentLoaded', () => {
+    showActiveTheme(getPreferredTheme())
+
+    document.querySelectorAll('[data-bs-theme-value]')
+        .forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            const theme = toggle.getAttribute('data-bs-theme-value')
+            setStoredTheme(theme)
+            setTheme(theme)
+            showActiveTheme(theme, true)
+        })
+        })
+    })
+})()
+    </script>
+</body>
+</html>
